@@ -68,9 +68,7 @@ public class stepDefination extends Utils{
 	  JsonPath js=new JsonPath(response.asString());
 	  String ActualName=js.getString("[0].author");
 	   assertEquals(ActualName,ExpectedName);
-	   System.out.println("Bookreq1");
-		System.out.println("Bookreq1");
-	System.out.println("Bookreq1");
+
 	}
 	
 	@Given("DeleteBook details")
