@@ -68,7 +68,7 @@ public class stepDefination extends Utils{
 	  JsonPath js=new JsonPath(response.asString());
 	  String ActualName=js.getString("[0].author");
 	   assertEquals(ActualName,ExpectedName);
-	   
+	   System.out.println("Bookreq1");
 	}
 	
 	@Given("DeleteBook details")
@@ -76,4 +76,6 @@ public class stepDefination extends Utils{
 	    // Write code here that turns the phrase above into concrete actions
 		Bookreq1=given().spec(requestSpecification()).body(data.DeletBookPayload(id));
 	}
+	
+	
 }
